@@ -1,14 +1,14 @@
 class api{
-  var base="https://9036-117-193-92-169.ngrok-free.app/";
-  var banner="https://9036-117-193-92-169.ngrok-free.app/banners/";
-  var cat="https://9036-117-193-92-169.ngrok-free.app/categories/";
-  var restaurants="https://9036-117-193-92-169.ngrok-free.app/restaurants/";
+  var base="https://6065-59-92-192-37.ngrok-free.app/";
+  var banner="https://6065-59-92-192-37.ngrok-free.app/banners/";
+  var cat="https://6065-59-92-192-37.ngrok-free.app/categories/";
+  var restaurants="https://6065-59-92-192-37.ngrok-free.app/restaurants/";
 //All product view
-  var productview="https://9036-117-193-92-169.ngrok-free.app/products/";
+  var productview="https://6065-59-92-192-37.ngrok-free.app/products/";
 
   //Restaurant
 
-  var rest_product="https://9036-117-193-92-169.ngrok-free.app/restaurant-product/";
+  var rest_product="https://6065-59-92-192-37.ngrok-free.app/restaurant-product/";
 
 
 
@@ -17,5 +17,5 @@ class api{
   //restruent
 
 
-  var restreg="https://9036-117-193-92-169.ngrok-free.app/HOMFOO-restaurant/";
+  var restreg="https://6065-59-92-192-37.ngrok-free.app/HOMFOO-restaurant/";
 }

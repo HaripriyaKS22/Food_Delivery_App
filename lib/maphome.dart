@@ -19,7 +19,7 @@ class _MapScreenState extends State<MapScreen> {
   List<Map<String, dynamic>> restaurants = [];
   Set<Marker> _markers = {};
   LatLng initialLocation = const LatLng(9.9469883, 76.2762553);
-  final String restaurantsEndpoint = "https://9036-117-193-92-169.ngrok-free.app/restaurants/";
+  final String restaurantsEndpoint = "https://6065-59-92-192-37.ngrok-free.app/restaurants/";
 
   bool isRestaurantSelected = false;
   Map<String, dynamic>? selectedRestaurant;
@@ -245,7 +245,7 @@ Widget buildRestaurantDetails() {
                           bottomLeft: Radius.circular(10),
                         ),
                         child: Image.network(
-                          "https://9036-117-193-92-169.ngrok-free.app/${restaurantItem?['image']}",
+                          "https://6065-59-92-192-37.ngrok-free.app/${restaurantItem?['image']}",
                           width: 130,
                           height: 170,
                           fit: BoxFit.cover,
@@ -456,7 +456,7 @@ Widget buildRestaurantDetails() {
                             bottomLeft: Radius.circular(10),
                           ),
                           child: Image.network(
-                            "https://9036-117-193-92-169.ngrok-free.app/${selectedRestaurant?['image']}",
+                            "https://6065-59-92-192-37.ngrok-free.app/${selectedRestaurant?['image']}",
                             width: 130,
                             height: 180,
                             fit: BoxFit.cover,

@@ -161,16 +161,17 @@ Future<void> fetchCategories() async {
  List<int> categoryIds = [];
   Future<void> fetchProducts() async {
     final token = await gettokenFromPrefs();
-    print("=============================$token");
+     print(a.rest_product  + '${widget.restaurant_id}');
     try {
-      print(a.rest_product  + '${widget.restaurant_id}');
+     
 
-      var response = await http.post(Uri.parse(a.rest_product  + '${widget.restaurant_id}/'), headers:
+      var response = await http.post(Uri.parse(a.rest_product), headers:
        {
       'Authorization': '$token',
 
     }, body: {
       'token': token,
+      'pk':widget.restaurant_id
     });
 
       
@@ -185,7 +186,7 @@ Future<void> fetchCategories() async {
         for (var productData in productsData) {
           // Fetch image URL
           String imageUrl =
-              "https://9036-117-193-92-169.ngrok-free.app/${productData['image1']}";
+              "https://6065-59-92-192-37.ngrok-free.app/${productData['image1']}";
           // You might need to adjust the URL based on your API response structure
 
           productsList.add({
