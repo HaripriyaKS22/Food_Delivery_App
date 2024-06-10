@@ -165,7 +165,7 @@ class _categoriesviewState extends State<categoriesview> {
                     ),
                   ),
                 ),
-                // Add search results here
+               
               ],
             ),
           ),
