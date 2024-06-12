@@ -344,12 +344,9 @@ Future<void> fetchBanners() async {
   //category
 
 Future<void> fetchCategories() async {
-  print("bbbbbbbbbbb");
   try {
-    print("bbbbbbbbbbb");
    
       final response = await http.get(Uri.parse(url));
-                print("0099999999999999999999$response");
 
 
       if (response.statusCode == 200) {
