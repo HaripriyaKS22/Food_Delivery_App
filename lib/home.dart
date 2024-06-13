@@ -366,7 +366,6 @@ Future<void> fetchCategories() async {
 
         setState(() {
           categories = categoriesList;
-          print("000000000000000000$categories");
         });
 
      

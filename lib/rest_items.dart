@@ -103,7 +103,6 @@ class _rest_itemsState extends State<rest_items> {
  List<Map<String, dynamic>> categories = [];
 
 Future<void> fetchCategories() async {
-  print("llllllllllll");
   try {
     final String key = 'categories_data';
     String? localData = await getDataLocally(key);
@@ -112,11 +111,9 @@ Future<void> fetchCategories() async {
       setState(() {
         // Use local data
         categories = (jsonDecode(localData) as List<dynamic>).cast<Map<String, dynamic>>();
-        print("nnnnnnnnnnnnnnnn$categories");
       });
     } else {
       final response = await http.get(Uri.parse(a.cat));
-              print("nnnnnnnnnnnnnnnn${response.body}");
 
 
       if (response.statusCode == 200) {
@@ -132,7 +129,6 @@ Future<void> fetchCategories() async {
             'imageBase64': base64Image,
           });
         }
-        print('oooooooooooooooo$categoriesList');
 
         
         // Filter categories based on categoryIds list
