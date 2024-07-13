@@ -43,16 +43,16 @@ class _loginState extends State<login> {
     try {
       var response = await http.post(Uri.parse(url),
           body: {"email": con1.text, "password": con2.text});
-      if (response.statusCode == 200) {
-        setState(() {
-          var list2 = jsonDecode(response.body);
+      // if (response.statusCode == 200) {
+      //   setState(() {
+      //     var list2 = jsonDecode(response.body);
 
-          print(list2);
-          Navigator.push(context, MaterialPageRoute(builder: (context)=>MapScreen()));
+      //     print(list2);
+      //     Navigator.push(context, MaterialPageRoute(builder: (context)=>MapScreen()));
 
 
-        });
-      } 
+      //   });
+      // } 
        if (response.statusCode == 200) {
         var list2 = jsonDecode(response.body);
         var status = list2['status'];
@@ -64,7 +64,7 @@ class _loginState extends State<login> {
             userId = userId.toString();
           });
 
-          print("=========jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj$token");
+          // print("=========jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj$token");
 
 
           await storeUserId(userId,token); // Store user ID in shared preferences
